@@ -4,8 +4,8 @@
 	"description": "this is my website ",
 	"main": "index.js",
 	"scripts": {
-		"test": "node index.js",
-		"run": "node index.js",
+		"test": "babel ./docroot/src -d ./docroot/lib && nodemon index.js",
+		"run": "./docroot/src -d ./docroot/lib && node index.js",
 		"build": "babel ./docroot/src -d ./docroot/lib"
 	},
 	"author": "skeleton_craft",
@@ -13,5 +13,9 @@
 	"devDependencies": {
 		"@babel/cli": "^7.18.6",
 		"@babel/core": "^7.18.6"
+	},
+	"dependencies": {
+		"@babel/preset-react": "^7.18.6",
+		"nodemon": "^2.0.19"
 	}
 }
