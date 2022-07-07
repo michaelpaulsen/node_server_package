@@ -1,18 +1,17 @@
 {
-  "name": "nodeserver",
-  "version": "0.0.1",
-  "description": "this is my website ",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index.js",
-    "run": "node index.js",
-    "build": "babel src -d ./docroot/lib"
-  },
-  "author": "skeleton_craft",
-  "license": "GNU 3.0",
-  "devDependencies": {
-    "@babel/cli": "^7.18.6",
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6"
-  }
+	"name": "nodeserver",
+	"version": "0.0.1",
+	"description": "this is my website ",
+	"main": "index.js",
+	"scripts": {
+		"test": "node index.js",
+		"run": "node index.js",
+		"build": "babel ./docroot/src -d ./docroot/lib"
+	},
+	"author": "skeleton_craft",
+	"license": "GNU 3.0",
+	"devDependencies": {
+		"@babel/cli": "^7.18.6",
+		"@babel/core": "^7.18.6"
+	}
 }
